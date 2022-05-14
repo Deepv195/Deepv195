@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2ndweb.css">
+
+    <title>2ndport</title>
+</head>
+
+<body>
+    <div id="preloader">
+    </div>
+    <div class="page">
+        <nav>
+
+            <h1>Deep<span>.web</span></h1>
+
+            <ul>
+                <li><a href="# "> <span> Home</span></a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Services</a></li>
+                <li><a href="#"> Skills</a></li>
+                <li><a href="#"> Contact</a></li>
+            </ul>
+            <a href="#" onclick="openSlideMenu()">
+                <div class="menu">
+                    <div class="div1"></div>
+                    <div class="div2"></div>
+                    <div class="div3"></div>
+                </div>
+            </a>
+        </nav>
+       
+
+        <div id="side-menu" class="side-nav">
+
+            <div class="btn-close" onclick="closeSlideMenu()">&times;
+                <hr>
+            </div>
+
+            <a href="#" class="active"> Home</a>
+            <hr>
+            <a href="#"> About</a>
+            <hr>
+            <a href="#"> Services</a>
+            <hr>
+            <a href="#"> Skills</a>
+            <hr>
+            <a href="#"> Contact</a>
+            <hr>
+        </div>
+
+
+
+
+
+
+        <div class="hero-heading">
+            <h1>
+                <span1> Hi, </span1> <br> I'm <span class="auto-input"></span>
+            </h1>
+        </div>
+        <div class="arrow-main">
+            <div class="arrow"></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="page1">
+        <h2> About Me</h2>
+        <div class="container">
+            <div class="left-content">
+                <p>Hii ,<br> I am Deepak Vishwakarma,A creative UI Designer & Web Developer,<br> You an contact me For
+                    any web related solution.</p>
+                <h1> <span>Name:-</span> Deepak Vishwakarma</h1>
+                <h1> <span>Email:-</span> deepakvishwa195@gmail.com</h1>
+                <h1> <span>Contact no.:-</span> 8208367904</h1>
+                <h1> <span>location:-</span> Mumbai</h1>
+            </div>
+            <div class="right-content">
+                <img src="img/myimg.jpeg" class="mypic">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="page2">
+        <h2> Services</h2>
+        <div class="page2container">
+            <div class="box">
+                <img src="img/icons8-pencil-64.png" class="card-logo">
+                <h3> Content creation</h3>
+                <p> I can create content for any social platform.</p>
+            </div>
+            <div class="box">
+                <img src="img/icons8-coding-64.png" class="card-logo">
+                <h3> FrontEnd Dev.</h3>
+                <p> Converting Designs into code is my favourite part.</p>
+            </div>
+            <div class="box">
+                <img src="img/icons8-design-64.png" class="card-logo">
+                <h3> UI Design</h3>
+                <p> Good design is about process, not product.</p>
+            </div>
+            <div class="box">
+                <img src="img/icons8-web-design-64.png" class="card-logo">
+                <h3> Web Design</h3>
+                <p> Design isn't finished until somebody is using it.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="page3">
+        <h2> Skills</h2>
+        <div class="progress-container">
+            <div class="progress">
+                <h3> HTML</h3>
+
+                <div class="progress-bar">
+                    <div class="html">
+                        <span5>85%</span5>
+                    </div>
+                </div>
+                <h3> CSS</h3>
+                <div class="progress-bar">
+                    <div class="css">
+                        <span5>75%</span5>
+                    </div>
+                </div>
+                <h3> JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="javascript">
+                        <span5>60%</span5>
+                    </div>
+                </div>
+                <h3> Python</h3>
+                <div class="progress-bar">
+                    <div class="python">
+                        <span5>60%</span5>
+                    </div>
+                </div>
+                <h3> Java</h3>
+                <div class="progress-bar">
+                    <div class="java">
+                        <span5>55%</span5>
+                    </div>
+                </div>
+                <h3> php</h3>
+                <div class="progress-bar">
+                    <div class="php">
+                        <span5>60%</span5>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="page4">
+        <h2> Contact me</h2>
+        <div class="formhead">
+            <div class="form">
+                <input type="text" placeholder="Your name*">
+                <input type="text" placeholder="Your email*">
+                <input type="text" placeholder="Subject*">
+            </div>
+            <div class="message">
+
+            <textarea  placeholder="Message" cols="30" rows="10"></textarea>
+            
+
+            </div>
+            <div class="btn-container">
+                <button class="send-btn">Send message </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="img/copyright.png" class="copy-right">
+        <h4> Deepweb 2022. <span4> All Rights Reserved <br> Designed by</span4>
+            <span3> Deepak vishwakarma</span3>
+        </h4>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '75%';
+
+        }
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Deepak", " a Web Developer,", " a UI Designer."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+   <script> 
+    
+
+    </script>
+
+
+</body>
+
+</html>

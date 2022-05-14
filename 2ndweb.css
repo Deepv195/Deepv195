@@ -1,0 +1,729 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+span3 {
+    color: #6037EC;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    width: 100%;
+    min-height: 2000px;
+
+
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: white url(loading.gif) no-repeat center center;
+    z-index: 100;
+}
+
+.page {
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(77, 26, 245, 0.322) 50%);
+    
+
+
+}
+
+
+.menu .div1 {
+    width: 28px;
+    height: 2.5px;
+    background-color: black;
+    margin: 6px 0;
+
+}
+
+.menu .div2 {
+    width: 20px;
+    height: 3px;
+    background-color: #6037EC;
+    margin: 0 8px;
+
+}
+
+.menu .div3 {
+
+    width: 14px;
+    height: 2.5px;
+    background-color: black;
+    margin-top: 6px;
+    margin-left: 14px;
+
+}
+
+nav h1 {
+    font-size: 20px;
+    position: relative;
+    transition: 0.6s;
+    letter-spacing: 2px;
+
+
+}
+
+span {
+    color: #6037EC;
+}
+
+
+
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 100px;
+    box-shadow: 0 0 16px #6037EC;
+    overflow: hidden;
+
+
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    position: relative;
+    transition: 0.5s;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+    letter-spacing: 1.5px;
+
+
+}
+
+nav ul li a::after {
+    content: "";
+    background-color: #6037EC;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+
+    bottom: 1px;
+    transition: 0.3s;
+
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+
+
+}
+
+nav ul li a:hover {
+    color: #6037EC;
+}
+
+
+
+
+.hero-heading {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-heading h1 {
+
+    font-size: 50px;
+    text-align: center;
+
+
+}
+
+span1 {
+    font-size: 35px;
+    color: #6037EC;
+    line-height: 100px;
+}
+
+.arrow-main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -180px;
+    animation: 1s infinite, move_downward 2s linear infinite;
+}
+
+.arrow {
+
+    height: 30px;
+    width: 30px;
+    border: solid #6037EC;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
+
+
+}
+
+@keyframes move_downward {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.page1 {
+    border-radius: 10px;
+    border: none;
+    
+    height: 100vh;
+    padding: 100px;
+
+}
+
+.page1 h2 {
+
+    color: #6037EC;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.page1 h2::before {
+
+    top: 40px;
+    content: "";
+    width: 115px;
+    height: 4px;
+    background-color: #6037EC;
+    position: absolute;
+
+}
+
+.page1 .container {
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+
+}
+
+.page1 .container .left-content p {
+    
+    line-height: 30px;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.849);
+    font-weight: 500;
+
+
+}
+
+.page1 .container .left-content h1 {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.page1 .container .right-content .mypic {
+    padding: 13px;
+    float: right;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px #6037EC;
+}
+
+.page2 {
+    border-radius: 10px;
+    border: none;
+  
+    min-height: 100vh;
+    padding: 50px;
+    background-color: rgba(77, 26, 245, 0.322);
+}
+
+.page2 h2 {
+    color: #6037EC;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.page2 h2::before {
+
+    top: 40px;
+    content: "";
+    width: 95px;
+    height: 4px;
+    background-color: #6037EC;
+    position: absolute;
+
+}
+
+.page2 .page2container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.page2 .page2container .box {
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+    width: 320px;
+    height: 260px;
+
+    align-items: center;
+    text-align: center;
+
+}
+
+.page2 .page2container .box .card-logo {
+    margin: 30px;
+    height: 50px;
+}
+
+.page2 .page2container .box p {
+    margin: 30px;
+}
+
+.page3 {
+    width: 100%;
+    height: 80vh;
+    background-color: white
+}
+
+.page3 h2 {
+    margin-top: 40px;
+    color: #6037EC;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.page3 h2::before {
+
+    top: 40px;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #6037EC;
+    position: absolute;
+
+
+}
+
+.progress-container {
+    margin-top: 100px;
+    margin: 100px 80px 0 80px;
+
+
+}
+
+.progress-bar {
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+
+    border: 0.3px solid black;
+
+}
+
+.progress-bar div {
+    height: 8.5px;
+    border-radius: 10px;
+    width: 0;
+    background: #6037EC;
+}
+
+.progress-bar div span5 {
+
+    color: black;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    font-weight: bold;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.progress h3 {
+    font-size: 14px;
+    color: #6037EC;
+    line-height: 40px;
+}
+
+.html {
+    animation: html 10s linear forwards;
+}
+
+.css {
+    animation: css 10s linear forwards;
+
+}
+
+.javascript {
+    animation: javascript 10s linear forwards;
+
+}
+
+.python {
+    animation: python 10s linear forwards;
+
+}
+
+.java {
+    animation: java 10s linear forwards;
+
+}
+
+.php {
+    animation: php 10s linear forwards;
+
+}
+
+@keyframes html {
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes css {
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes javascript {
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes python {
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes java {
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes php {
+    100% {
+        width: 60%;
+    }
+}
+
+
+.page4 {
+    background-color: rgba(77, 26, 245, 0.322);
+    border-radius: 10px;
+    border: none;
+
+    height: 100vh;
+    padding: 80px;
+
+
+}
+
+
+.page4 h2 {
+    margin-top: -25px;
+    color: #6037EC;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.page4 h2::before {
+
+    top: 40px;
+    content: "";
+    width: 133px;
+    height: 4px;
+    background-color: #6037EC;
+    position: absolute;
+
+
+}
+
+.formhead {
+    height: 100vh;
+    margin-top: 40px;
+
+}
+
+
+.form input {
+    border: 1px solid #6037EC;
+    border-radius: 5px;
+    outline: #6037EC;
+    text-align: left;
+    height: 40px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+
+.message textarea {
+
+    border-radius: 5px;
+    border: 1px solid #6037EC;
+    padding: 10px;
+    outline: #6037EC;
+    height: 260px;
+    width: 100%;
+    margin: 10px;
+
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.send-btn {
+
+    cursor: pointer;
+    position: absolute;
+    width: 140px;
+    height: 45px;
+    font-weight: bold;
+    color: white;
+    background-color: #6137ece8;
+    border-radius: 6px;
+
+}
+
+.send-btn:hover {
+    transition: 1s ease;
+    color: white;
+    background-color: black;
+}
+
+.footer {
+    border: none;
+    border-top: 4px solid blue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 25vh;
+
+}
+
+.footer h4 span4 {
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.copy-right {
+    margin-top: -18px;
+    margin-right: 7px;
+    width: 16px;
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+   
+
+
+
+
+    nav {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 20px #6037EC;
+        margin: 0;
+        padding: 17px 20px;
+
+    }
+
+    nav h1 {
+
+        flex: 1;
+        margin-left: 40px;
+
+
+
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        cursor: pointer;
+
+    }
+
+
+    .hero-heading h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+
+
+    .side-nav {
+        width: 0;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        opacity: 1;
+        overflow-x: hidden;
+        transition: 0.6s ease;
+
+
+    }
+
+    .side-nav a {
+        padding: 20px;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+
+    }
+
+    .side-nav .active {
+        margin-top: 40px;
+        color: #6037EC;
+    }
+
+
+
+
+    .side-nav .btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 35px;
+        cursor: pointer;
+        margin-right: 20px;
+        align-items: center;
+        display: block;
+        padding: 5px;
+
+
+        font-weight: bold;
+
+    }
+
+    .side-nav .btn-close:hover {
+        color: #6037EC;
+    }
+
+    .side-nav a:hover {
+        transition: 0.3s ease;
+        color: #6037EC;
+    }
+
+    .page1 {
+        padding: 60px;
+    }
+
+    .page1 h2 {
+        text-align: center;
+
+    }
+
+    .right-content {
+        display: none;
+    }
+    .mypic{
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+@media (min-width:768px) {
+
+    .side-nav {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+
+}
