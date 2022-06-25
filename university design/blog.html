@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,200;1,300;1,400&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> University Web-Design</title>
+</head>
+<body>
+
+    <!-- Page 1 -->
+    <div class="header about-header">
+        <nav>
+            <a href="index.html"> <img src="img/logo.png"> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href=""> Home</a></li>
+                    <li><a href=""> About</a></li>
+                    <li><a href=""> Courses</a></li>
+                    <li><a href=""> Blogs</a></li>
+                    <li><a href=""> Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <h1> Our certificate & Online Program For 2022</h1>
+
+    </div>
+
+    <!-- -------Blog  content--------- -->
+    <div class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg">
+                <h2> Our certificate & Online Program For 2022</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minus quas odit non voluptate molestias iure, neque ex excepturi ipsum soluta esse? Exercitationem itaque recusandae consequatur, cum obcaecati tempore debitis?</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minus quas odit non voluptate molestias iure, neque ex excepturi ipsum soluta esse? Exercitationem itaque recusandae consequatur, cum obcaecati tempore debitis?</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minus quas odit non voluptate molestias iure, neque ex excepturi ipsum soluta esse? Exercitationem itaque recusandae consequatur, cum obcaecati tempore debitis?</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minus quas odit non voluptate molestias iure, neque ex excepturi ipsum soluta esse? Exercitationem itaque recusandae consequatur, cum obcaecati tempore debitis?</p>
+
+                <div class="comment-box">
+                    <h3> Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea  placeholder="Message" rows="13" cols="20"></textarea>
+                        
+                        <button type="submit" class="hero-btn red-btn"> POST COMMENT</button>
+
+                    </form>
+
+
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3> Post Categories</h3>
+                <div>
+                    <span1> Bussiness Analytics</span1>
+                    <span1> 22</span1>
+                </div>
+                <div>
+                    <span1> Data Science</span1>
+                    <span1> 28</span1>
+                </div>
+                <div>
+                    <span1> Machine Learning</span1>
+                    <span1> 12</span1>
+                </div>
+                <div>
+                    <span1> Ethical Hacking</span1>
+                    <span1> 15</span1>
+                </div>
+                <div>
+                    <span1> Commerce</span1>
+                    <span1> 18</span1>
+                </div>
+                <div>
+                    <span1> Arts</span1>
+                    <span1> 20</span1>
+                </div>
+                <div>
+                    <span1> Journalism</span1>
+                    <span1> 26 </span1>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Footer Section -->
+
+    <div class="footer">
+        <h4> All Rights Reserved</h4>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, molestiae veritatis ullam earum porro delectus</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Made with <i class="fa fa-heart-o"></i> by <span>Deepak Vishwakarma</span></p>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function openMenu(){
+            navLinks.style.right="0";
+        }
+        function closeMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
